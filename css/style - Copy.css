@@ -1,0 +1,254 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap'); */
+@import url('./fonts.css');
+
+body{
+  padding-top: 5.4rem;
+  font-family: 'RobotoCondensed-Regular', sans-serif !important;
+}
+.banner{
+  margin: 0;
+  padding: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.change-wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.change-wrapper h2{
+  padding: 0;
+  margin: 0;
+  color: #000;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+.change-wrapper p{
+  color: #000;
+  font-size: 18px;
+  margin: 0;
+  list-style: 35px;
+}
+.change-wrapper a{
+  background: crimson;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.my-portfolio .banner {
+  background: url(../img/Cover.png) 100% 100% fixed;
+}
+
+#mymenu a.btn {
+  color: #fff;
+}
+#mymenu ul li a {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  padding: 10px 20px;
+}
+#mymenu li{
+  padding: 0 30px;
+}
+#mymenu ul li a.active{
+  color: #13909e;
+  padding: 10px 20px;
+  position: relative;
+}
+#mymenu ul li a.active::before{
+  color: #13909e;
+  position: absolute;
+  content: "<";
+  left: 0;
+  width: auto;
+}
+#mymenu ul li a.active::after{
+  color: #13909e;
+  position: absolute;
+  content: ">";
+  right: 0;
+  width: auto;
+}
+#mymenu ul li a:hover::before{
+  color: #13909e;
+  position: absolute;
+  content: "<";
+  left: 0;
+  width: auto;
+}
+#mymenu ul li a:hover::after{
+  color: #13909e;
+  position: absolute;
+  content: ">";
+  right: 0;
+  width: auto;
+}
+#mymenu ul li a.btn:hover::after, #mymenu ul li a.btn:hover::before{
+  content: "";
+}
+.my-portfolio .navbar {
+  /* background-color: #20283b; */
+  background-color: #212529;
+}
+
+.bg-cust {
+  background-color: #fff;
+}
+
+a.btn {
+  background-color: #13909e;
+  border-radius: 50px;
+  border-color: #13909e;
+}
+
+/* about */
+.about {
+  background-color: #dbfcff;
+}
+
+.circle {
+  padding: 13px 20px;
+  border-radius: 50%;
+  background-color: #13909e;
+  color: #fff;
+  max-height: 50px;
+  z-index: 2;
+}
+
+.how-it-works.row .col-2 {
+  align-self: stretch;
+}
+
+.how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  /* border-left: 3px solid #ED8D8D; */
+  z-index: 1;
+}
+
+.how-it-works.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+
+.how-it-works.row .col-2.full::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+
+.how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+/* timeline */
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+
+.timeline hr {
+  border-top: 3px solid #13909e;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+
+.timeline .corner {
+  border: 3px solid #13909e;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
+}
+
+/* contact */
+.my-portfolio .form-control{
+border-radius: 1.5rem;
+padding: 1em;
+}
+
+/* SVG banner */
+.banner-saran{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  background-color: #212529;
+}
+#stars{
+  animation: blink-animation 3s infinite alternate;
+  -webkit-animation: blink-animation 3s infinite alternate;
+}
+@keyframes blink-animation {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+#hair{
+  animation: mov 15s infinite linear alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes mov {
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(10deg);
+  }
+}
+@media (min-width: 991.98px){
+  .banner-saran{
+    height: 100vh;
+  } 
+}
