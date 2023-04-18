@@ -36,6 +36,16 @@
   <link rel="stylesheet" href="css/all.min.css" />
   <!-- Magnific popup -->
   <link rel="stylesheet" href="vendor/Magnific-Popup/dist/magnific-popup.css" />
+
+  <script
+   type="text/javascript"
+   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+   (function () {
+    emailjs.init("Bt5D-zf6R40N_4ttd");
+   })();
+  </script>
  </head>
 
  <body class="my-portfolio">
@@ -983,8 +993,9 @@
          <div class="card-body text-center">
           <h5 class="card-title text-uppercase font-roboto">Web Developer</h5>
           <p class="card-text text-secondary">
-           Some quick services examples to build on the card-body title and
-           makeup the bulk card conrent
+           As a web developer, Create well-designed and tested code using best
+           practices for web development, including for responsive design which
+           ensure that sites meet user expectations.
           </p>
          </div>
         </div>
@@ -997,8 +1008,9 @@
          <div class="card-body text-center">
           <h5 class="card-title text-uppercase font-roboto">UI/UX Design</h5>
           <p class="card-text text-secondary">
-           Some quick services examples to build on the card-body title and
-           makeup the bulk card conrent
+           As a UI/UX designer, aim to build keen brand awareness to help your
+           company improve customer satisfaction, improve user interaction, as
+           well as boost your business grow and enhance.
           </p>
          </div>
         </div>
@@ -1011,8 +1023,9 @@
          <div class="card-body text-center">
           <h5 class="card-title text-uppercase font-roboto">Web Design</h5>
           <p class="card-text text-secondary">
-           Some quick services examples to build on the card-body title and
-           makeup the bulk card conrent
+           A web design service provides you with a customized website design
+           that's perfect for your business or personal site. Also redesigning
+           existing sites to crafting new websites.
           </p>
          </div>
         </div>
@@ -1025,8 +1038,9 @@
          <div class="card-body text-center">
           <h5 class="card-title text-uppercase font-roboto">SEO</h5>
           <p class="card-text text-secondary">
-           Some quick services examples to build on the card-body title and
-           makeup the bulk card conrent
+           A search engine optimization services offer intended to increase
+           visibility and ultimately organic search traffic to your websites.
+           Currently providing off-page optimization.
           </p>
          </div>
         </div>
@@ -1212,6 +1226,7 @@
           <button
            type="button"
            class="btn button1 secondary-button text-uppercase"
+           onclick="sendMail()"
           >
            Submit
           </button>
