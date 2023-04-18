@@ -363,9 +363,9 @@ footer.footer-area .social a:hover > i {
  .site-main .about-area .about-title p {
   padding: 0%;
  }
- .site-main .subscribe-us-area .subscribe form .input-textbox input {
+ .site-main .subscribe-us-area .subscribe form .input-textbox input,
+ .site-main .subscribe-us-area .subscribe form .input-textbox textarea {
   width: auto;
-  margin: 5% 0;
  }
 }
 /* if the viewport is equal to 1910px or less than that */
